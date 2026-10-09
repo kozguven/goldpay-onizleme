@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sepet ve ödeme — GoldPay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+<a class="atla" href="#icerik">İçeriğe geç</a>
+<div class="cetvel-dikey" aria-hidden="true"></div>
+<div class="ust-bant"><div class="govde">
+  <a class="serit" href="fiyatlar.html" aria-label="Canlı fiyatlar sayfasına git">
+    <span class="serit-oge"><b>Has altın</b> <span class="say" data-canli="has-satis">7.347,65</span> <i class="degisim yukari">▲ %1,65</i></span>
+    <span class="serit-oge"><b>Gümüş</b> <span class="say" data-canli="gumus-satis">106,50</span> <i class="degisim yukari">▲ %2,10</i></span>
+    <span class="serit-oge gizli-m"><b>USD</b> <span class="say" data-canli="usd">49,35</span> <i class="degisim yukari">▲ %0,04</i></span>
+    <span class="serit-oge gizli-m"><b>EUR</b> <span class="say" data-canli="eur">55,27</span></span>
+    <span class="serit-oge gizli-m"><b>Ons</b> <span class="say" data-canli="ons">4.870</span> $</span>
+    <span class="serit-zaman">Son güncelleme 14:32, her 4 dakikada bir</span>
+  </a>
+</div></div>
+<header class="ust"><div class="govde ust-ic">
+  <button class="hamburger" type="button" aria-expanded="false" aria-controls="cekmece" aria-label="Menüyü aç"><span></span></button>
+  <a class="logo" href="index.html" aria-label="GoldPay ana sayfa">Gold<svg class="centik" viewBox="0 0 9 22" aria-hidden="true"><path d="M1 1v20M1 4h6M1 11h8M1 18h6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>Pay</a>
+  <nav class="nav" id="nav-masaustu" aria-label="Ana menü"></nav>
+  <div class="ust-araclar">
+    <a class="arac" href="fiyatlar.html" aria-label="Canlı fiyatlar"><svg viewBox="0 0 24 24"><path d="M3 17l5-6 4 4 5-8 4 5"/><path d="M3 21h18"/></svg></a>
+    <a class="arac" href="hesabim.html" aria-label="Hesabım"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></a>
+    <a class="arac sepet" href="sepet.html" aria-label="Sepet, 2 ürün"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="sayac">2</span></a>
+  </div>
+</div></header>
+<div class="perde" hidden></div>
+<nav class="cekmece" id="cekmece" aria-label="Mobil menü" aria-hidden="true" hidden></nav>
+<main id="icerik">
+<div class="govde">
+  <nav class="kirinti" aria-label="Ekmek kırıntısı"><span><a href="index.html">Ana sayfa</a></span><span>Sepet ve ödeme</span></nav>
+  <div class="sayfa-bas" style="padding-bottom:12px"><div><h1>Sepet ve ödeme</h1><p>Üç adım: sepet, teslimat, ödeme. Fiyatlar ödeme tamamlanana kadar 5 dakika sabit tutulur.</p></div></div>
+
+  <div class="adim-cubuk" role="group" aria-label="Ödeme adımları">
+    <button type="button" aria-current="step"><i>1</i><span>Sepet</span></button>
+    <button type="button"><i>2</i><span>Teslimat</span></button>
+    <button type="button"><i>3</i><span>Ödeme</span></button>
+  </div>
+
+  <div class="odeme-duzen">
+    <div>
+      <section class="adim-panel" id="adim-sepet">
+        <div class="kart-kutu">
+          <h3>Sepetiniz, 2 ürün</h3>
+          <div class="sepet-satir">
+            <div class="sfoto"><img src="../assets/img/altin-10g.jpg" alt=""></div>
+            <div><div class="sad">GoldPay 10 Gr Külçe Altın 999.9</div><div class="sdetay">Blister kart, seri numaralı sertifika · tek seferlik</div>
+              <div class="adet"><button type="button" data-eksi aria-label="Azalt">−</button><output>1</output><button type="button" aria-label="Artır">+</button></div></div>
+            <div class="sfiyat"><span data-canli="s10">73.360</span> TL<small>Kartla 75.928 TL</small></div>
+          </div>
+          <div class="sepet-satir">
+            <div class="sfoto"><img src="../assets/img/ceyrek.jpg" alt=""></div>
+            <div><div class="sad">Çeyrek Altın, yeni tarihli</div><div class="sdetay">Darphane basımı, 1,754 g</div>
+              <div class="adet"><button type="button" data-eksi aria-label="Azalt">−</button><output>1</output><button type="button" aria-label="Artır">+</button></div></div>
+            <div class="sfiyat"><span data-canli="sceyrek">12.448</span> TL<small>Kartla 12.884 TL</small></div>
+          </div>
+          <div class="uyari"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Fiyatlar 5 dakika sabit.</b> Ödemeye geçtiğiniz andan itibaren sepet fiyatları <strong data-geri-sayim="300">05:00</strong> boyunca değişmez; süre dolarsa güncel fiyat yeniden gösterilir.</div></div>
+        </div>
+        <div class="adim-ileri"><a class="dugme sade" href="kategori.html">Alışverişe devam</a><button class="dugme" type="button" data-adim-git="1">Teslimata geç</button></div>
+      </section>
+
+      <section class="adim-panel" id="adim-teslimat" hidden>
+        <div class="kart-kutu">
+          <h3>Teslimat adresi</h3>
+          <form class="form" onsubmit="return false">
+            <div class="satir"><label class="alan">Ad <input type="text" value="Mehmet" autocomplete="given-name"></label><label class="alan">Soyad <input type="text" value="Aydın" autocomplete="family-name"></label></div>
+            <div class="satir"><label class="alan">Telefon <input type="tel" value="0532 000 00 00" autocomplete="tel"></label><label class="alan">T.C. kimlik numarası <input type="text" inputmode="numeric" placeholder="11 hane"></label></div>
+            <label class="alan">Adres <textarea>Bağdat Cad. No. 112 D. 7, Kadıköy</textarea></label>
+            <div class="satir uc"><label class="alan">İl <input type="text" value="İstanbul"></label><label class="alan">İlçe <input type="text" value="Kadıköy"></label><label class="alan">Posta kodu <input type="text" value="34710"></label></div>
+          </form>
+          <div class="uyari"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="1"/><circle cx="9" cy="11" r="2"/><path d="M6 17c0-2 1.5-3 3-3s3 1 3 3M14 10h4M14 14h3"/></svg><div><b>Kimlik doğrulama.</b> 5.000 TL üzeri alımlarda T.C. kimlik numarası yasal olarak zorunludur; teslimatta kimlik kontrolü yapılır.</div></div>
+        </div>
+        <div class="kart-kutu">
+          <h3>Teslimat şekli</h3>
+          <div class="secenekler">
+            <label><input type="radio" name="teslim" checked><span><b>Sigortalı kargo</b><small>Hafta içi 16:00'a kadar aynı gün kargoda; mühürlü paket, imzalı teslim.</small></span><span class="sag">Ücretsiz</span></label>
+            <label><input type="radio" name="teslim"><span><b>Zırhlı araçla teslimat</b><small>200.000 TL üzeri siparişlerde; sizinle kararlaştırılan saatte, kimlik kontrolüyle.</small></span><span class="sag">Ücretsiz</span></label>
+            <label><input type="radio" name="teslim"><span><b>Mağazadan teslim</b><small>GoldPay Kıymetli Madenler, İstanbul. Randevu SMS ile gönderilir.</small></span><span class="sag">Ücretsiz</span></label>
+          </div>
+        </div>
+        <div class="adim-ileri"><button class="dugme sade" type="button" data-adim-git="0">Sepete dön</button><button class="dugme" type="button" data-adim-git="2">Ödemeye geç</button></div>
+      </section>
+
+      <section class="adim-panel" id="adim-odeme" hidden>
+        <div class="kart-kutu">
+          <h3>Ödeme yöntemi</h3>
+          <div class="secenekler">
+            <label><input type="radio" name="odeme" checked><span><b>Havale / EFT</b><small>Dekont eşleşince sipariş doğrulanır; genellikle 20 dakika içinde.</small></span><span class="sag">85.808 TL</span></label>
+          </div>
+          <div class="banka-liste">
+            <div class="banka"><b>Kuveyt Türk</b>GoldPay Kıymetli Madenler A.Ş.<br><code>TR00 0000 0000 0000 0000 0000 01</code></div>
+            <div class="banka"><b>Garanti BBVA</b>GoldPay Kıymetli Madenler A.Ş.<br><code>TR00 0000 0000 0000 0000 0000 02</code></div>
+            <div class="banka"><b>Yapı Kredi</b>GoldPay Kıymetli Madenler A.Ş.<br><code>TR00 0000 0000 0000 0000 0000 03</code></div>
+            <div class="banka"><b>Ziraat</b>GoldPay Kıymetli Madenler A.Ş.<br><code>TR00 0000 0000 0000 0000 0000 04</code></div>
+          </div>
+          <p class="kucuk ikincil" style="margin:10px 0 0">Açıklamaya sipariş numaranızı yazın. Havale, sipariş saatinden itibaren 5 dakika içinde başlatılmalıdır; aksi hâlde fiyat yenilenir.</p>
+          <div class="secenekler" style="margin-top:16px">
+            <label><input type="radio" name="odeme"><span><b>Kredi kartı, 3D Secure</b><small>Tek çekim; taksit uygulanmaz. Kart bilgisi GoldPay'de saklanmaz.</small></span><span class="sag">88.812 TL</span></label>
+          </div>
+          <div class="kart-formu">
+            <div class="form">
+              <label class="alan">Kart üzerindeki ad <input type="text" placeholder="Ad Soyad" autocomplete="cc-name"></label>
+              <label class="alan">Kart numarası <input type="text" inputmode="numeric" placeholder="0000 0000 0000 0000" autocomplete="cc-number"></label>
+              <div class="uc"><label class="alan">Son kullanma <input type="text" placeholder="AA / YY" autocomplete="cc-exp"></label><label class="alan">Güvenlik kodu <input type="text" inputmode="numeric" placeholder="CVC" autocomplete="cc-csc"></label></div>
+            </div>
+            <div class="guvenli"><svg viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="1"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>3D Secure doğrulaması bankanızın sayfasında yapılır · 256 bit SSL</div>
+          </div>
+          <label class="onay"><input type="checkbox" id="sozlesme"><span><a class="baglanti" href="#">Mesafeli satış sözleşmesi</a>ni ve <a class="baglanti" href="#">ön bilgilendirme formu</a>nu okudum, kabul ediyorum.</span></label>
+        </div>
+        <div class="adim-ileri"><button class="dugme sade" type="button" data-adim-git="1">Teslimata dön</button><button class="dugme bronz" type="button" id="siparisi-onayla">Siparişi onayla</button></div>
+      </section>
+
+      <section id="siparis-onay" hidden>
+        <div class="onay-kutu">
+          <span class="no">Sipariş No. GP-26-10418</span>
+          <h2>Siparişiniz alındı</h2>
+          <p class="ikincil" style="max-width:48ch;margin:0 auto">Havale dekontu eşleşince "ödeme doğrulandı" bildirimi gelir. 16:00'a kadar doğrulanan siparişler bugün kargoya verilir.</p>
+          <ol class="takip" id="takip" aria-label="Sipariş durumu">
+            <li class="oldu">Alındı<small>14:36</small></li>
+            <li class="simdi">Ödeme doğrulandı<small>bekleniyor</small></li>
+            <li>Hazırlanıyor</li>
+            <li>Kargoda</li>
+            <li>Teslim</li>
+          </ol>
+          <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:28px"><a class="dugme" href="hesabim.html#siparisler">Siparişlerime git</a><a class="dugme sade" href="index.html">Ana sayfa</a></div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="ozet kart-kutu" aria-label="Sipariş özeti">
+      <h3>Sipariş özeti</h3>
+      <div class="ozet-satir"><span>10 Gr Külçe Altın 999.9 × 1</span><span>73.360 TL</span></div>
+      <div class="ozet-satir"><span>Çeyrek Altın × 1</span><span>12.448 TL</span></div>
+      <div class="ozet-satir"><span>Sigortalı kargo</span><span>Ücretsiz</span></div>
+      <div class="ozet-satir toplam"><span>Toplam<small>Havale / EFT · KDV dahil</small></span><span>85.808 TL</span></div>
+      <div class="ozet-satir kucuk ikincil" style="border-top:0;padding-top:0"><span>Kartla</span><span>88.812 TL</span></div>
+      <div class="kucuk ikincil" style="display:flex;align-items:center;gap:6px;margin-top:4px"><span class="nokta" aria-hidden="true"></span> Fiyatlar <strong data-geri-sayim="300">05:00</strong> boyunca sabit</div>
+      <button class="dugme bronz genis" type="button" data-adim-git="2">Ödemeye geç</button>
+      <div class="guven-mini">
+        <span><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg>Sertifikalı ürün</span>
+        <span><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg>Sigortalı kargo</span>
+        <span><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg>3D Secure</span>
+        <span><svg viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7"/></svg>7 gün iade</span>
+      </div>
+    </aside>
+  </div>
+
+  <section class="bolum">
+    <div class="cetvel-yatay" aria-hidden="true"><span class="no">Takip</span></div>
+    <div class="bolum-bas" style="margin-top:24px"><div><h2 style="font-size:30px">Sipariş takibi nasıl işler</h2><p>Her aşamada SMS ve uygulama bildirimi; örnek bir siparişin akışı.</p></div></div>
+    <div class="kart-kutu">
+      <ol class="takip" style="margin-top:8px" aria-label="Örnek sipariş durumu">
+        <li class="oldu">Alındı<small>Salı 14:36</small></li>
+        <li class="oldu">Ödeme doğrulandı<small>Salı 14:58</small></li>
+        <li class="oldu">Hazırlanıyor<small>Salı 15:20</small></li>
+        <li class="simdi">Kargoda<small>Salı 16:05</small></li>
+        <li>Teslim<small>Çarşamba</small></li>
+      </ol>
+    </div>
+  </section>
+</div>
+</main>
+<footer class="alt"><div class="govde">
+  <div class="alt-ic">
+    <div>
+      <a class="logo" href="index.html">Gold<svg class="centik" viewBox="0 0 9 22" aria-hidden="true"><path d="M1 1v20M1 4h6M1 11h8M1 18h6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>Pay</a>
+      <p>GoldPay Kıymetli Madenler. Sertifikalı gram külçe altın, gümüş ve ziynet; her 4 dakikada bir güncellenen fiyat, sigortalı teslimat.</p>
+      <p>Destek: 0850 000 00 00, hafta içi 09:00–18:00</p>
+    </div>
+    <div><h4>Ürünler</h4><ul>
+      <li><a href="kategori.html">Gram Külçe Altın</a></li><li><a href="kategori.html">Gram Külçe Gümüş</a></li><li><a href="kategori.html">Ziynet Altın</a></li><li><a href="kategori.html">22 Ayar Takı</a></li><li><a href="index.html#havale">Hesaba Altın Havale</a></li><li><a href="index.html#birikim">Düzenli Birikim</a></li></ul></div>
+    <div><h4>Hesap</h4><ul>
+      <li><a href="hesabim.html">Hesabım</a></li><li><a href="hesabim.html#siparisler">Siparişlerim</a></li><li><a href="hesabim.html#portfoy">Portföyüm</a></li><li><a href="sepet.html#takip">Sipariş takibi</a></li><li><a href="fiyatlar.html">Canlı fiyatlar</a></li></ul></div>
+    <div><h4>Kurumsal</h4><ul>
+      <li><a href="index.html#guven">Neden GoldPay</a></li><li><a href="index.html#gonderim">Teslimat ve sigorta</a></li><li><a href="urun.html#sss">İade koşulları</a></li><li><a href="#">Mesafeli satış sözleşmesi</a></li><li><a href="#">KVKK aydınlatma metni</a></li></ul></div>
+  </div>
+  <div class="alt-cizgi">
+    <span class="etbis"><i>E</i> ETBİS kayıtlı · 256 bit SSL</span>
+    <span class="odeme"><span>VISA</span><span>Mastercard</span><span>TROY</span><span>Havale / EFT</span><span>3D Secure</span></span>
+    <span>© 2026 GoldPay Kıymetli Madenler</span>
+    <span class="webizmo">Tasarım önizlemesi · Webizmo</span>
+  </div>
+</div></footer>
+<details class="ekranlar"><summary>Ekranlar</summary><div class="ek-kutu"><ul>
+<li><a href="index.html">1 · Ana sayfa</a></li><li><a href="kategori.html">2 · Kategori</a></li><li><a href="urun.html">3 · Ürün detayı</a></li><li><a href="sepet.html">4 · Sepet ve ödeme</a></li><li><a href="fiyatlar.html">5 · Canlı fiyatlar</a></li><li><a href="hesabim.html">6 · Hesabım</a></li><li><a href="panel.html">7 · Yönetim paneli</a></li><li><a href="mobil.html">8 · Telefon ekranları</a></li></ul><hr><a href="../index.html">Tüm seçeneklere dön</a></div></details>
+<script src="app.js"></script>
+</body>
+</html>

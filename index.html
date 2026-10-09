@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>GoldPay — Ön Tasarım</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1C2024;--muted:#5D6570;--line:#E3E6EA;--bg:#FFFFFF;--soft:#F4F6F7;--accent:#E2562A;--accent-d:#B9421C}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Public Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:16px;padding-bottom:16px;font-size:14px;color:var(--muted);gap:12px;flex-wrap:wrap}
+header b{color:var(--ink)}
+.intro{padding:48px 0 28px}
+h1{font-size:clamp(30px,5vw,46px);line-height:1.12;font-weight:800;letter-spacing:-.02em;max-width:20ch}
+.intro p{margin-top:16px;max-width:64ch;color:var(--muted);font-size:18px}
+.opts{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:18px 0 40px}
+.opt{border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+.opt .shot{display:block;aspect-ratio:3/4;overflow:hidden;background:var(--soft);border-bottom:1px solid var(--line)}
+.opt .shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.opt .body{padding:18px 18px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.opt h2{font-size:22px;line-height:1.2}
+.opt h2 small{display:block;font-size:14px;font-weight:600;color:var(--muted);margin-bottom:2px}
+.opt p{color:var(--muted);font-size:15.5px}
+.sw{display:flex;gap:6px;margin-top:2px}
+.sw i{width:26px;height:26px;border-radius:50%;border:1px solid rgba(0,0,0,.1);display:block}
+.btn{display:flex;justify-content:center;align-items:center;min-height:48px;border-radius:10px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;margin-top:auto}
+.btn:hover{background:#000}
+.screens{font-size:14px;display:flex;flex-wrap:wrap;gap:6px}
+.screens a{padding:6px 10px;border:1px solid var(--line);border-radius:20px;text-decoration:none;color:var(--muted)}
+.screens a:hover{border-color:var(--ink);color:var(--ink)}
+section.block{padding:36px 0;border-top:1px solid var(--line)}
+section.block h2{font-size:26px;margin-bottom:14px}
+ol.steps{padding-left:22px;display:grid;gap:10px;max-width:70ch}
+ol.steps li::marker{font-weight:800;color:var(--accent-d)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.note{background:var(--soft);border-radius:12px;padding:18px 20px;color:var(--ink);font-size:16px}
+.note ul{padding-left:20px;display:grid;gap:6px;margin-top:8px;color:var(--muted)}
+.pdf{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 18px;border-radius:10px;border:2px solid var(--ink);text-decoration:none;font-weight:700;margin-top:6px}
+.menu{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.menu figure{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--soft)}
+.menu figure img{width:100%;display:block}
+.menu figcaption{padding:10px 14px;font-size:14px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:14px}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (max-width:900px){.opts{grid-template-columns:1fr}.opt .shot{aspect-ratio:4/3}.two,.menu{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><span><b>Ön tasarım rehberi</b> · GoldPay e-ticaret sitesi</span><span>Hazırlayan: Webizmo</span></div></header>
+<main class="wrap">
+  <div class="intro">
+    <h1>Mücahit Bey, GoldPay için üç farklı tasarım yönü</h1>
+    <p>Görüşmemizde anlattığınız gibi GoldPay'in kendine özgü, sade ve güven veren bir kimliği olmalı. Bu yüzden üç farklı yön hazırladık; üçünde de beğendiğiniz görselli mobil menü kendi karakterine göre yorumlandı. Her seçenekte ana sayfa, kategori, ürün detayı, sepet ve ödeme, canlı fiyatlar, hesabım ve portföy, yönetim paneli ve telefon ekranları var. Hepsi tıklanabilir; telefondan bakmanızı öneririz, ilk olarak sağ üstteki menüye dokunun.</p>
+  </div>
+  <div class="opts">
+    <article class="opt">
+      <a class="shot" href="secenek-1/index.html"><img src="thumbs/secenek-1.jpg" alt="Seçenek 1 ana sayfa görünümü"></a>
+      <div class="body">
+        <h2><small>Seçenek 1</small>Kasa · Koyu, sinematik, lüks</h2>
+        <p data-ozet="1">Gece açılan bir banka kasası gibi koyu ve ağır: grafit zemin, sıcak altın vurgu, büyük ürün fotoğrafları. Açılışta cam gibi bir canlı fiyat kartı var; rakamlar piyasayla birlikte oynuyor. Telefonda menü, kasa kapısı gibi soldan kayarak açılıyor: her kategorinin solunda ürün fotoğrafı, altında o anki gram fiyatı; dokununca alt kategoriler görselli kutucuklarla beliriyor.</p>
+        <div class="sw" aria-label="Renkler"><i style="background:#111214"></i><i style="background:#1B1D21"></i><i style="background:#C9A24D"></i><i style="background:#E6C87A"></i><i style="background:#F1ECE2"></i></div>
+        <div class="screens"><a href="secenek-1/kategori.html">Kategori</a><a href="secenek-1/urun.html">Ürün detayı</a><a href="secenek-1/sepet.html">Sepet ve ödeme</a><a href="secenek-1/fiyatlar.html">Canlı fiyatlar</a><a href="secenek-1/panel.html">Yönetim paneli</a><a href="secenek-1/mobil.html">Telefon</a></div>
+        <a class="btn" href="secenek-1/index.html">Seçenek 1'i incele</a>
+      </div>
+    </article>
+    <article class="opt">
+      <a class="shot" href="secenek-2/index.html"><img src="thumbs/secenek-2.jpg" alt="Seçenek 2 ana sayfa görünümü"></a>
+      <div class="body">
+        <h2><small>Seçenek 2</small>Cetvel · Aydınlık, hassas, kurumsal</h2>
+        <p data-ozet="2">Kâğıt üstünde kesin rakamlar: açık zemin, mürekkep rengi yazı, bronz altın vurgu. Sayfanın kahramanı fiyat; ana sayfa dev bir canlı has altın fiyatıyla açılıyor, sayfa kenarındaki ince cetvel motifi rafineri hassasiyetini anlatıyor. Ürünler katalog plakası gibi numaralı kartlarda. Telefonda menü soldan çekmece gibi açılıyor: iki sütun görselli kategori kutucuğu, altında anlık fiyat; dokununca alt kategoriler yuvarlak görselli çipler olarak çıkıyor.</p>
+        <div class="sw" aria-label="Renkler"><i style="background:#F6F3EC"></i><i style="background:#161616"></i><i style="background:#3F4A40"></i><i style="background:#A47E2B"></i><i style="background:#DDE3DA"></i></div>
+        <div class="screens"><a href="secenek-2/kategori.html">Kategori</a><a href="secenek-2/urun.html">Ürün detayı</a><a href="secenek-2/sepet.html">Sepet ve ödeme</a><a href="secenek-2/fiyatlar.html">Canlı fiyatlar</a><a href="secenek-2/panel.html">Yönetim paneli</a><a href="secenek-2/mobil.html">Telefon</a></div>
+        <a class="btn" href="secenek-2/index.html">Seçenek 2'yi incele</a>
+      </div>
+    </article>
+    <article class="opt">
+      <a class="shot" href="secenek-3/index.html"><img src="thumbs/secenek-3.jpg" alt="Seçenek 3 ana sayfa görünümü"></a>
+      <div class="body">
+        <h2><small>Seçenek 3</small>Cüzdan · Telefonda uygulama hissi</h2>
+        <p data-ozet="3">Cebinizdeki altın cüzdanı: şişe yeşili ve şampanya rengi, yuvarlatılmış kartlar, altta sekme çubuğu ve ortada büyük "Al" düğmesi. Açılışta müşterinin portföy kartı (kaç gram altını var, bugün ne kadar etti) ve kayan canlı fiyat şeridi; düzenli birikim planlayıcısı aylık alımı hesaplıyor. Telefonda menü alttan yukarı kayan bir panel: büyük görselli kategori kutucukları, dokununca alt kategoriler yuvarlak fotoğraflı çipler hâlinde kayıyor.</p>
+        <div class="sw" aria-label="Renkler"><i style="background:#0F3B2E"></i><i style="background:#16503F"></i><i style="background:#E7D3A1"></i><i style="background:#D1AE5B"></i><i style="background:#F6F3EC"></i></div>
+        <div class="screens"><a href="secenek-3/kategori.html">Kategori</a><a href="secenek-3/urun.html">Ürün detayı</a><a href="secenek-3/sepet.html">Sepet ve ödeme</a><a href="secenek-3/fiyatlar.html">Canlı fiyatlar</a><a href="secenek-3/panel.html">Yönetim paneli</a><a href="secenek-3/mobil.html">Telefon</a></div>
+        <a class="btn" href="secenek-3/index.html">Seçenek 3'ü incele</a>
+      </div>
+    </article>
+  </div>
+  <section class="block">
+    <h2>Beğendiğiniz mobil menü, üç yorum</h2>
+    <p style="max-width:68ch;color:var(--muted);margin-bottom:16px">NadirGold'daki görselli menüyü örnek vermiştiniz. Üç seçenekte de menü görsel ve kategori adını birlikte gösteriyor; her biri kendi karakterine göre açılıyor. Telefondan sağ üstteki menü simgesine dokunarak deneyebilirsiniz.</p>
+    <div class="menu">
+      <figure><img src="thumbs/menu-1.jpg" alt="Seçenek 1 mobil menü"><figcaption><b>Seçenek 1:</b> soldan kasa kapısı gibi açılır, her satırda fotoğraf + kategori + anlık gram fiyatı.</figcaption></figure>
+      <figure><img src="thumbs/menu-2.jpg" alt="Seçenek 2 mobil menü"><figcaption><b>Seçenek 2:</b> soldan çekmece, iki sütun görselli kutucuk, kenarında cetvel motifi.</figcaption></figure>
+      <figure><img src="thumbs/menu-3.jpg" alt="Seçenek 3 mobil menü"><figcaption><b>Seçenek 3:</b> alttan yukarı kayan panel, büyük fotoğraflı kutucuklar, yuvarlak alt kategori çipleri.</figcaption></figure>
+    </div>
+  </section>
+  <section class="block">
+    <h2>Nasıl inceleyebilirsiniz?</h2>
+    <div class="two">
+      <ol class="steps">
+        <li>Bir seçeneğin ana sayfasını açın; menüden bir kategoriye girip ürün detayına, oradan sepete ve ödeme adımına geçin.</li>
+        <li>Her sayfanın sağ altındaki <b>Ekranlar</b> düğmesi o seçeneğin sekiz ekranını listeler: ana sayfa, kategori, ürün detayı, sepet ve ödeme, canlı fiyatlar, hesabım, yönetim paneli, telefon ekranları.</li>
+        <li>Aynı ekranı üç seçenekte karşılaştırın; örneğin üçünün de "Ürün detayı" sayfasına bakın.</li>
+        <li>Yönetim paneli sizin göreceğiniz ekran: fiyat ve marj yönetimi, sipariş kuyruğu, havale eşleştirme, stok.</li>
+      </ol>
+      <div class="note">
+        <b>Görüşünüzü nasıl iletebilirsiniz?</b>
+        <ul>
+          <li>WhatsApp'tan seçenek numarasını yazmanız yeterli: "Seçenek 2".</li>
+          <li>Karma da olur: "1'in renkleri, 3'ün menüsü".</li>
+          <li>Bir ekranla ilgili isteğinizi ekran adıyla yazın: "Ürün detayında fiyat daha büyük olsun".</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="block">
+    <h2>Telefon ekranları ve sunum PDF'i</h2>
+    <p style="max-width:68ch;color:var(--muted)">Üç seçeneğin tanıtımı ve her seçeneğin telefon ekranları (giriş, ana sayfa, menü, kategori, ürün, ödeme, portföy, sipariş takibi) tek dosyada.</p>
+    <a class="pdf" href="GoldPay-On-Tasarim-ve-Mobil-Prototip.pdf">Sunum PDF'ini aç</a>
+  </section>
+  <section class="block">
+    <div class="note">
+      <b>Bilmeniz gerekenler</b>
+      <ul>
+        <li>Bu bir ön tasarımdır: ekranlar tıklanabilir, ancak fiyat akışı, ödeme ve SMS henüz gerçek sisteme bağlı değildir.</li>
+        <li>Fiyatlar 09.10.2026 piyasasından örnektir; canlı sitede fiyat kaynağınızdan otomatik güncellenir. Sipariş, müşteri ve panel rakamları örnektir.</li>
+        <li>Ürün fotoğrafları temsilîdir ve yapay zekâ ile üretildi; gerçek ürün fotoğraflarınız geldiğinde değiştirilir. Logo yazımları da öneri niteliğindedir.</li>
+        <li>Seçtiğiniz yön sitenin arayüzünün temeli olur; renk, yazı ve yerleşimdeki ince ayarları birlikte yaparız.</li>
+        <li>Bu adres geçicidir; seçiminizden sonra kaldırılacaktır.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">Ön tasarım · GoldPay · Webizmo (webizmo.tr)</div></footer>
+</body>
+</html>

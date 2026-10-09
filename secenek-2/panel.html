@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Yönetim paneli — GoldPay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+<a class="atla" href="#icerik">İçeriğe geç</a>
+<div class="cetvel-dikey" aria-hidden="true"></div>
+<div class="ust-bant"><div class="govde">
+  <a class="serit" href="fiyatlar.html" aria-label="Canlı fiyatlar sayfasına git">
+    <span class="serit-oge"><b>Has altın</b> <span class="say" data-canli="has-satis">7.347,65</span> <i class="degisim yukari">▲ %1,65</i></span>
+    <span class="serit-oge"><b>Gümüş</b> <span class="say" data-canli="gumus-satis">106,50</span> <i class="degisim yukari">▲ %2,10</i></span>
+    <span class="serit-oge gizli-m"><b>USD</b> <span class="say" data-canli="usd">49,35</span> <i class="degisim yukari">▲ %0,04</i></span>
+    <span class="serit-oge gizli-m"><b>EUR</b> <span class="say" data-canli="eur">55,27</span></span>
+    <span class="serit-oge gizli-m"><b>Ons</b> <span class="say" data-canli="ons">4.870</span> $</span>
+    <span class="serit-zaman">Son güncelleme 14:32, her 4 dakikada bir</span>
+  </a>
+</div></div>
+<header class="ust"><div class="govde ust-ic">
+  <button class="hamburger" type="button" aria-expanded="false" aria-controls="cekmece" aria-label="Menüyü aç"><span></span></button>
+  <a class="logo" href="index.html" aria-label="GoldPay ana sayfa">Gold<svg class="centik" viewBox="0 0 9 22" aria-hidden="true"><path d="M1 1v20M1 4h6M1 11h8M1 18h6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>Pay</a>
+  <nav class="nav" id="nav-masaustu" aria-label="Ana menü"></nav>
+  <div class="ust-araclar">
+    <a class="arac" href="fiyatlar.html" aria-label="Canlı fiyatlar"><svg viewBox="0 0 24 24"><path d="M3 17l5-6 4 4 5-8 4 5"/><path d="M3 21h18"/></svg></a>
+    <a class="arac" href="hesabim.html" aria-label="Hesabım"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></a>
+    <a class="arac sepet" href="sepet.html" aria-label="Sepet, 2 ürün"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="sayac">2</span></a>
+  </div>
+</div></header>
+<div class="perde" hidden></div>
+<nav class="cekmece" id="cekmece" aria-label="Mobil menü" aria-hidden="true" hidden></nav>
+<main id="icerik">
+<div class="panel-govde">
+  <aside class="panel-yan">
+    <a class="logo" href="index.html">Gold<svg class="centik" viewBox="0 0 9 22" aria-hidden="true"><path d="M1 1v20M1 4h6M1 11h8M1 18h6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>Pay</a>
+    <div class="rol">Yönetim · Mücahit Narin</div>
+    <ul>
+      <li><a class="simdi" href="#ozet"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>Bugün</a></li>
+      <li><a href="#fiyat"><svg viewBox="0 0 24 24"><path d="M3 17l5-6 4 4 5-8 4 5"/></svg>Fiyat yönetimi</a></li>
+      <li><a href="#siparis"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Siparişler<span class="say">7</span></a></li>
+      <li><a href="#havale"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="1"/><path d="M3 10h18"/></svg>Havale eşleştirme<span class="say">3</span></a></li>
+      <li><a href="#stok"><svg viewBox="0 0 24 24"><path d="M4 8l8-4 8 4v8l-8 4-8-4z"/><path d="M4 8l8 4 8-4M12 12v8"/></svg>Stok</a></li>
+      <li><a href="#musteri"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg>Müşteriler</a></li>
+      <li><a href="#"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2 2M16.4 16.4l2 2M5.6 18.4l2-2M16.4 7.6l2-2"/></svg>Ayarlar</a></li>
+    </ul>
+  </aside>
+
+  <div class="panel-ana">
+    <div class="panel-bas" id="ozet"><div><h1>Bugün</h1><div class="tarih">Cuma, 9 Ekim 2026 · 14:36</div></div><div class="kucuk ikincil" style="display:flex;align-items:center;gap:6px"><span class="nokta" aria-hidden="true"></span> Fiyat kaynağı bağlı, son çekim 14:32</div></div>
+    <div class="ozetler">
+      <div class="ozet-kart"><small>Sipariş</small><div class="rakam">23</div><span class="kucuk ikincil">dün 18</span></div>
+      <div class="ozet-kart"><small>Ciro</small><div class="rakam">1.284.600 TL</div><span class="kucuk ikincil">havale 1.102.400 · kart 182.200</span></div>
+      <div class="ozet-kart"><small>Bekleyen havale</small><div class="rakam">3 <span class="degisim" style="color:var(--bronz)">146.230 TL</span></div><span class="kucuk ikincil">en eski 14:12</span></div>
+      <div class="ozet-kart"><small>Kargoya verilecek</small><div class="rakam">9</div><span class="kucuk ikincil">16:00'a 1 sa 24 dk</span></div>
+    </div>
+
+    <div class="panel-izgara ucte-iki" id="fiyat">
+      <div class="kart-kutu">
+        <div class="kart-bas"><h3>Fiyat yönetimi</h3><span class="kucuk">Kaynak: canlı has altın + USD/TL · 4 dakikada bir</span></div>
+        <div class="kaynak">
+          <div>Has altın kaynak (gram)<b><span data-canli="has-alis">7.298,00</span> TL</b></div>
+          <div>Ons altın · USD/TL<b><span data-canli="ons">4.870</span> $ · <span data-canli="usd">49,35</span></b></div>
+        </div>
+        <div class="tablo-sarma" style="border:0;border-radius:0"><table>
+          <thead><tr><th>Gramaj</th><th>Kaynak</th><th>Marj / işçilik</th><th>Site fiyatı</th><th>Kart (+%3,5)</th></tr></thead>
+          <tbody>
+            <tr><td class="ad">1 g</td><td>7.298</td><td><input class="marj-girdi" type="text" value="49" aria-label="1 g marj"> TL</td><td><b>7.347</b></td><td>7.604</td></tr>
+            <tr><td class="ad">2,5 g</td><td>18.245</td><td><input class="marj-girdi" type="text" value="135" aria-label="2,5 g marj"> TL</td><td><b>18.380</b></td><td>19.023</td></tr>
+            <tr><td class="ad">5 g</td><td>36.490</td><td><input class="marj-girdi" type="text" value="230" aria-label="5 g marj"> TL</td><td><b>36.720</b></td><td>38.005</td></tr>
+            <tr><td class="ad">10 g</td><td>72.980</td><td><input class="marj-girdi" type="text" value="380" aria-label="10 g marj"> TL</td><td><b>73.360</b></td><td>75.928</td></tr>
+            <tr><td class="ad">20 g</td><td>145.960</td><td><input class="marj-girdi" type="text" value="580" aria-label="20 g marj"> TL</td><td><b>146.540</b></td><td>151.669</td></tr>
+            <tr><td class="ad">50 g</td><td>364.900</td><td><input class="marj-girdi" type="text" value="3.600" aria-label="50 g marj"> TL</td><td><b>368.500</b></td><td>381.398</td></tr>
+            <tr><td class="ad">100 g</td><td>729.800</td><td><input class="marj-girdi" type="text" value="5.800" aria-label="100 g marj"> TL</td><td><b>735.600</b></td><td>761.346</td></tr>
+          </tbody>
+        </table></div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;margin-top:14px">
+          <label class="anahtar"><input type="checkbox" id="dondur"><i aria-hidden="true"></i> Fiyatları dondur</label>
+          <button class="dugme kucuk" type="button">Marjları kaydet</button>
+          <span class="kucuk ikincil">Son güncelleme 14:32 · değişiklikler anında siteye yansır</span>
+        </div>
+        <div class="don-mesaj">Fiyatlar canlı: kaynak kur her 4 dakikada bir çekiliyor, son çekim 14:32.</div>
+      </div>
+      <div class="kart-kutu satis-grafik">
+        <div class="kart-bas"><h3>Günlük satış</h3><span class="kucuk">Son 14 gün · TL</span></div>
+        <svg viewBox="0 0 320 180" role="img" aria-label="Son 14 günün günlük satış çubuk grafiği">
+          <line x1="0" y1="150" x2="320" y2="150"/><line x1="0" y1="100" x2="320" y2="100"/><line x1="0" y1="50" x2="320" y2="50"/>
+          <text x="0" y="46">1,5 M</text><text x="0" y="96">1,0 M</text><text x="0" y="146">0,5 M</text>
+          <rect x="30" y="92" width="14" height="58"/><rect x="50" y="110" width="14" height="40"/><rect x="70" y="78" width="14" height="72"/><rect x="90" y="86" width="14" height="64"/><rect x="110" y="120" width="14" height="30"/><rect x="130" y="128" width="14" height="22"/><rect x="150" y="70" width="14" height="80"/><rect x="170" y="62" width="14" height="88"/><rect x="190" y="84" width="14" height="66"/><rect x="210" y="56" width="14" height="94"/><rect x="230" y="74" width="14" height="76"/><rect x="250" y="104" width="14" height="46"/><rect x="270" y="66" width="14" height="84"/><rect class="bugun" x="290" y="22" width="14" height="128"/>
+          <text x="30" y="168">26.09</text><text x="150" y="168">02.10</text><text x="276" y="168">bugün</text>
+        </svg>
+        <div class="kucuk ikincil" style="margin-top:8px">Bugün 1.284.600 TL; 14 günlük ortalama 884.000 TL.</div>
+      </div>
+    </div>
+
+    <div class="panel-izgara" id="siparis">
+      <div class="kart-kutu">
+        <div class="kart-bas"><h3>Sipariş kuyruğu</h3><span class="kucuk">7 açık sipariş</span></div>
+        <div class="tablo-sarma" style="border:0;border-radius:0"><table class="liste-tablo">
+          <thead><tr><th>No</th><th>Müşteri</th><th>Ürün</th><th>Tutar</th><th>Durum</th></tr></thead>
+          <tbody>
+            <tr><td>10418</td><td>Mehmet A.</td><td>10 g külçe + çeyrek</td><td>85.808</td><td><span class="durum bronz">Ödeme bekliyor</span></td></tr>
+            <tr><td>10417</td><td>Sevgi K.</td><td>2,5 g birikim</td><td>18.380</td><td><span class="durum bronz">Ödeme bekliyor</span></td></tr>
+            <tr><td>10416</td><td>Hasan Ö.</td><td>50 g gümüş × 2</td><td>12.434</td><td><span class="durum yesil">Doğrulandı</span></td></tr>
+            <tr><td>10415</td><td>Ayşe D.</td><td>50 g külçe altın</td><td>368.500</td><td><span class="durum yesil">Doğrulandı · zırhlı</span></td></tr>
+            <tr><td>10414</td><td>Kerim T.</td><td>Tam altın × 2</td><td>94.560</td><td><span class="durum">Hazırlanıyor</span></td></tr>
+            <tr><td>10413</td><td>Elif S.</td><td>1 g külçe × 3</td><td>22.041</td><td><span class="durum">Kargoda</span></td></tr>
+            <tr><td>10412</td><td>Burak Y.</td><td>Burma bilezik 10 g</td><td>64.574</td><td><span class="durum">Kargoda</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="kart-kutu" id="havale">
+        <div class="kart-bas"><h3>Havale eşleştirme</h3><span class="kucuk">Banka hareketleri, dekont ile sipariş eşleşmesi</span></div>
+        <div class="eslestir">
+          <div class="dekont"><div><b>85.808,00 TL</b><small>Kuveyt Türk · 14:41 · MEHMET AYDIN · açıklama "GP-26-10418"</small></div><button class="dugme kucuk" type="button">Eşleştir</button><div class="eslesme">Öneri: <strong>10418</strong> Mehmet A., 85.808 TL <span class="durum yesil">Tutar ve ad eşleşti</span></div></div>
+          <div class="dekont"><div><b>18.380,00 TL</b><small>Garanti BBVA · 14:33 · SEVGI KARA · açıklama boş</small></div><button class="dugme kucuk" type="button">Eşleştir</button><div class="eslesme">Öneri: <strong>10417</strong> Sevgi K., 18.380 TL <span class="durum bronz">Tutar eşleşti, açıklama yok</span></div></div>
+          <div class="dekont"><div><b>42.000,00 TL</b><small>Ziraat · 14:12 · OSMAN DEMIR · açıklama "altin"</small></div><button class="dugme kucuk sade" type="button">Elle seç</button><div class="eslesme">Eşleşen sipariş yok <span class="durum kirmizi">Müşteriyle görüşülmeli</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-izgara">
+      <div class="kart-kutu" id="stok">
+        <div class="kart-bas"><h3>Stok</h3><span class="kucuk">Gramaj bazında adet</span></div>
+        <div class="tablo-sarma" style="border:0;border-radius:0"><table class="liste-tablo">
+          <thead><tr><th>Ürün</th><th>Adet</th><th>Doluluk</th><th>Durum</th></tr></thead>
+          <tbody>
+            <tr><td>1 g külçe 999.9</td><td>146</td><td><div class="cubuk"><i style="width:73%"></i></div></td><td>Yeterli</td></tr>
+            <tr><td>2,5 g külçe 995.0</td><td>58</td><td><div class="cubuk"><i style="width:58%"></i></div></td><td>Yeterli</td></tr>
+            <tr><td>5 g külçe 999.9</td><td>41</td><td><div class="cubuk"><i style="width:41%"></i></div></td><td>Yeterli</td></tr>
+            <tr><td>10 g külçe 999.9</td><td>12</td><td><div class="cubuk"><i class="az" style="width:12%"></i></div></td><td class="kritik">Kritik, eşik 15</td></tr>
+            <tr><td>50 g külçe 999.9</td><td>4</td><td><div class="cubuk"><i class="az" style="width:8%"></i></div></td><td class="kritik">Kritik, eşik 5</td></tr>
+            <tr><td>Çeyrek altın</td><td>220</td><td><div class="cubuk"><i style="width:88%"></i></div></td><td>Yeterli</td></tr>
+            <tr><td>50 g gümüş</td><td>96</td><td><div class="cubuk"><i style="width:64%"></i></div></td><td>Yeterli</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="kart-kutu" id="musteri">
+        <div class="kart-bas"><h3>Müşteriler</h3><span class="kucuk">Son 30 gün · 412 aktif</span></div>
+        <div class="tablo-sarma" style="border:0;border-radius:0"><table class="liste-tablo musteri-liste">
+          <thead><tr><th>Müşteri</th><th>Sipariş</th><th>Toplam</th><th>Kimlik</th></tr></thead>
+          <tbody>
+            <tr><td><span class="ad">Mehmet Aydın</span><br><span class="kucuk ikincil">İstanbul · birikim planı</span></td><td>3</td><td>169.928 TL</td><td><span class="durum yesil">Doğrulandı</span></td></tr>
+            <tr><td><span class="ad">Ayşe Demir</span><br><span class="kucuk ikincil">İzmir</span></td><td>1</td><td>368.500 TL</td><td><span class="durum yesil">Doğrulandı</span></td></tr>
+            <tr><td><span class="ad">Sevgi Kara</span><br><span class="kucuk ikincil">Ankara · birikim planı</span></td><td>6</td><td>110.280 TL</td><td><span class="durum yesil">Doğrulandı</span></td></tr>
+            <tr><td><span class="ad">Osman Demir</span><br><span class="kucuk ikincil">Konya</span></td><td>0</td><td>0 TL</td><td><span class="durum bronz">Bekliyor</span></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+<footer class="alt"><div class="govde">
+  <div class="alt-ic">
+    <div>
+      <a class="logo" href="index.html">Gold<svg class="centik" viewBox="0 0 9 22" aria-hidden="true"><path d="M1 1v20M1 4h6M1 11h8M1 18h6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>Pay</a>
+      <p>GoldPay Kıymetli Madenler. Sertifikalı gram külçe altın, gümüş ve ziynet; her 4 dakikada bir güncellenen fiyat, sigortalı teslimat.</p>
+      <p>Destek: 0850 000 00 00, hafta içi 09:00–18:00</p>
+    </div>
+    <div><h4>Ürünler</h4><ul>
+      <li><a href="kategori.html">Gram Külçe Altın</a></li><li><a href="kategori.html">Gram Külçe Gümüş</a></li><li><a href="kategori.html">Ziynet Altın</a></li><li><a href="kategori.html">22 Ayar Takı</a></li><li><a href="index.html#havale">Hesaba Altın Havale</a></li><li><a href="index.html#birikim">Düzenli Birikim</a></li></ul></div>
+    <div><h4>Hesap</h4><ul>
+      <li><a href="hesabim.html">Hesabım</a></li><li><a href="hesabim.html#siparisler">Siparişlerim</a></li><li><a href="hesabim.html#portfoy">Portföyüm</a></li><li><a href="sepet.html#takip">Sipariş takibi</a></li><li><a href="fiyatlar.html">Canlı fiyatlar</a></li></ul></div>
+    <div><h4>Kurumsal</h4><ul>
+      <li><a href="index.html#guven">Neden GoldPay</a></li><li><a href="index.html#gonderim">Teslimat ve sigorta</a></li><li><a href="urun.html#sss">İade koşulları</a></li><li><a href="#">Mesafeli satış sözleşmesi</a></li><li><a href="#">KVKK aydınlatma metni</a></li></ul></div>
+  </div>
+  <div class="alt-cizgi">
+    <span class="etbis"><i>E</i> ETBİS kayıtlı · 256 bit SSL</span>
+    <span class="odeme"><span>VISA</span><span>Mastercard</span><span>TROY</span><span>Havale / EFT</span><span>3D Secure</span></span>
+    <span>© 2026 GoldPay Kıymetli Madenler</span>
+    <span class="webizmo">Tasarım önizlemesi · Webizmo</span>
+  </div>
+</div></footer>
+<details class="ekranlar"><summary>Ekranlar</summary><div class="ek-kutu"><ul>
+<li><a href="index.html">1 · Ana sayfa</a></li><li><a href="kategori.html">2 · Kategori</a></li><li><a href="urun.html">3 · Ürün detayı</a></li><li><a href="sepet.html">4 · Sepet ve ödeme</a></li><li><a href="fiyatlar.html">5 · Canlı fiyatlar</a></li><li><a href="hesabim.html">6 · Hesabım</a></li><li><a href="panel.html">7 · Yönetim paneli</a></li><li><a href="mobil.html">8 · Telefon ekranları</a></li></ul><hr><a href="../index.html">Tüm seçeneklere dön</a></div></details>
+<script src="app.js"></script>
+</body>
+</html>
