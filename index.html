@@ -47,18 +47,36 @@ ol.steps li::marker{font-weight:800;color:var(--accent-d)}
 .menu figure{margin:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--soft)}
 .menu figure img{width:100%;display:block}
 .menu figcaption{padding:10px 14px;font-size:14px;color:var(--muted)}
+.opt.final{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);margin:18px 0 40px;border:2px solid var(--ink)}
+.opt.final .shot{aspect-ratio:auto;height:100%;max-height:620px;border-bottom:0;border-right:1px solid var(--line)}
+.opt.final .body{padding:26px 26px 28px;gap:14px}
+.opt.final h2{font-size:28px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+.btns .btn{margin-top:0;padding:0 22px;flex:1}
+.btns .pdf{margin-top:0}
 footer{border-top:1px solid var(--line);padding:22px 0 40px;color:var(--muted);font-size:14px}
 a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-@media (max-width:900px){.opts{grid-template-columns:1fr}.opt .shot{aspect-ratio:4/3}.two,.menu{grid-template-columns:1fr}}
+@media (max-width:900px){.opt.final{grid-template-columns:1fr}.opt.final .shot{aspect-ratio:4/3;max-height:none;border-right:0;border-bottom:1px solid var(--line)}.opts{grid-template-columns:1fr}.opt .shot{aspect-ratio:4/3}.two,.menu{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header><div class="wrap"><span><b>Ön tasarım rehberi</b> · GoldPay e-ticaret sitesi</span><span>Hazırlayan: Webizmo</span></div></header>
 <main class="wrap">
   <div class="intro">
-    <h1>Mücahit Bey, GoldPay için altı farklı tasarım yönü</h1>
-    <p>Görüşmemizde anlattığınız gibi GoldPay'in kendine özgü, sade ve güven veren bir kimliği olmalı. İlk üç seçeneğin ardından istediğiniz gibi üç yeni yön daha ekledik; yeniler sayfanın başında. Altısında da beğendiğiniz görselli mobil menü kendi karakterine göre yorumlandı. Her seçenekte ana sayfa, kategori, ürün detayı, sepet ve ödeme, canlı fiyatlar, hesabım ve portföy, yönetim paneli ve telefon ekranları var. Hepsi tıklanabilir; telefondan bakmanızı öneririz, ilk olarak sağ üstteki menüye dokunun.</p>
+    <h1>Mücahit Bey, GoldPay için final tasarım</h1>
+    <p>Seçiminiz doğrultusunda Seçenek 5'in renklerini Seçenek 3'teki uygulama hissiyle birleştirdik; final tasarım sayfanın en başında. Tüm ekranlar tıklanabilir; telefondan bakmanızı öneririz. Önceki altı seçenek karşılaştırma için aşağıda duruyor.</p>
   </div>
+  <h2 class="tur">Final tasarım</h2>
+  <article class="opt final">
+    <a class="shot" href="secenek-7/index.html"><img src="thumbs/secenek-7.jpg" alt="Final tasarım ana sayfa görünümü"></a>
+    <div class="body">
+      <h2><small>Final · Seçenek 5 + Seçenek 3</small>Platin Cüzdan · Beyaz, ferah, uygulama gibi</h2>
+      <p data-ozet="7">İstediğiniz gibi Seçenek 5 Platin'in renkleri, yazı tipleri ve özel bankacılık netliği aynen korundu; üstüne Seçenek 3'teki mobil uygulama hissi eklendi. Telefonda altta sabit bir sekme çubuğu ve ortasında büyük "Al" düğmesi, en üstte altın hesabınızı gösteren bir cüzdan kartı ve tek dokunuşla Al, Sat, Havale, Birikim düğmeleri var. Ürünler ve fiyatlar parmakla kaydırılan şeritlerde; sepet alttan açılan bir sayfa olarak geliyor. Notunuz üzerine yeşil hiçbir yüzeyde kullanılmadı, ağırlık beyazda: kartlar, üst bar, alt çubuk ve menü beyaz.</p>
+      <div class="sw" aria-label="Renkler"><i style="background:#FFFFFF"></i><i style="background:#EEF0F2"></i><i style="background:#15171A"></i><i style="background:#6B727C"></i><i style="background:#A8823A"></i></div>
+      <div class="screens"><a href="secenek-7/index.html?menu=1">Menü açık</a><a href="secenek-7/kategori.html">Kategori</a><a href="secenek-7/urun.html">Ürün detayı</a><a href="secenek-7/sepet.html">Sepet ve ödeme</a><a href="secenek-7/fiyatlar.html">Canlı fiyatlar</a><a href="secenek-7/hesabim.html">Hesabım</a><a href="secenek-7/panel.html">Yönetim paneli</a><a href="secenek-7/mobil.html">Telefon</a></div>
+      <div class="btns"><a class="btn" href="secenek-7/index.html">Final tasarımı incele</a><a class="pdf" href="GoldPay-Final-Tasarim.pdf">Final PDF</a></div>
+    </div>
+  </article>
   <h2 class="tur">Yeni üç seçenek</h2>
   <div class="opts">
     <article class="opt">
@@ -159,7 +177,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offse
   <section class="block">
     <h2>Telefon ekranları ve sunum PDF'i</h2>
     <p style="max-width:68ch;color:var(--muted)">Her seçeneğin tanıtımı ve telefon ekranları (giriş, ana sayfa, menü, kategori, ürün, ödeme, portföy, sipariş takibi) tek dosyada.</p>
-    <a class="pdf" href="GoldPay-Yeni-Uc-Secenek-4-5-6.pdf">Yeni seçenekler (4, 5, 6) PDF</a> <a class="pdf" href="GoldPay-On-Tasarim-ve-Mobil-Prototip.pdf">İlk seçenekler (1, 2, 3) PDF</a>
+    <a class="pdf" href="GoldPay-Final-Tasarim.pdf">Final tasarım PDF</a> <a class="pdf" href="GoldPay-Yeni-Uc-Secenek-4-5-6.pdf">Yeni seçenekler (4, 5, 6) PDF</a> <a class="pdf" href="GoldPay-On-Tasarim-ve-Mobil-Prototip.pdf">İlk seçenekler (1, 2, 3) PDF</a>
   </section>
   <section class="block">
     <div class="note">
